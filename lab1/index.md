@@ -63,7 +63,9 @@ in the message file provided as a command line argument.
 
 The characters in the header are described in the following table (you may recognize these if you've used
 the [python struct library](https://docs.python.org/3/library/struct.html)) :
+![Header Character Descriptions](char_table_defs.png)
 
+<!--- 
 | Character | Type | Size (bytes) |
 | :---: | :---: | ---: |
 | 'b' | signed byte | 1 |
@@ -71,6 +73,7 @@ the [python struct library](https://docs.python.org/3/library/struct.html)) :
 | 'i' | signed int | 4 |
 | 'd' | signed double | 8 |
 | 'e' | special character denoting message end | 0 |
+--->
 
 The `'e'` character denotes the end of the header. The numbers directly follow it, packed tightly.
 
